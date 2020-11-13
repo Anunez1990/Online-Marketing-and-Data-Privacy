@@ -32,37 +32,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-    position: fixed;
-    display: none;
-    background: #007bff;
-    color: #fff;
-    width: 44px;
-    height: 44px;
-    text-align: center;
-    line-height: 1;
-    font-size: 16px;
-    border-radius: 50%;
-    right: 15px;
-    bottom: 15px;
-    transition: background 0.5s;
-    z-index: 11;
-}
-
-.back-to-top i {
-    padding-top: 12px;
-    color: #fff;
-}
-
-@media (max-width: 768px) {
-    .back-to-top {
-        bottom: 15px;
-    }
-}
-
-/*--------------------------------------------------------------
 # Header and Navigation Menu
 --------------------------------------------------------------*/
 #header {
@@ -71,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 997;
     transition: all 0.5s;
     padding: 20px 0;
-    background: #fff;
+    background: black;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
 }
 #header .logo h1 {
@@ -81,10 +50,11 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1;
     font-weight: 400;
     letter-spacing: 3px;
-    text-transform: uppercase;
+    color: white;
 }
 #header .logo h1 a, #header .logo h1 a:hover {
     color: #00366f;
+    color: white;
     text-decoration: none;
 }
 #header .logo {
@@ -94,12 +64,12 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1;
     font-weight: 500;
     letter-spacing: 2px;
-    text-transform: uppercase;
     display: inline;
 }
 .menu{
     width: 100%;
-    padding-left: 5rem;
+    padding-left: 3rem;
+    color: white;
 }
 
 .icon-color{
@@ -119,9 +89,9 @@ h1, h2, h3, h4, h5, h6 {
 #introduction {
     width: 100%;
     position: relative;
-    background: #00467F;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #A5CC82, #00467F);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #A5CC82, #00467F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     padding: 80px 0 80px 0;
 }
@@ -311,6 +281,43 @@ section {
     margin-bottom: 0;
 }
 
+/*--------------------------------------------------------------
+# Carousel
+--------------------------------------------------------------*/
+#project-pages {
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+}
+.project-pages-text{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.project-pages-img {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+#press {
+    background-color: #ef8172;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 15px;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+#pricing {
+    padding: 7% 15%;
+}
 /*--------------------------------------------------------------
 # Main Content
 --------------------------------------------------------------*/
@@ -531,11 +538,11 @@ section {
 --------------------------------------------------------------*/
 #footer {
     font-size: 14px;
-    background: #125294;
+    background: black;
 }
 
 #footer .footer-newsletter {
-    padding: 50px 0;
+    padding: 10px 0;
     background: #fff;
     text-align: center;
     font-size: 15px;
@@ -589,7 +596,7 @@ section {
 }
 
 #footer .footer-top {
-    padding: 60px 0 30px 0;
+    padding: 10px 0 0px 0;
     background: #fff;
 }
 
