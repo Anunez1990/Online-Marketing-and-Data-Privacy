@@ -66,11 +66,6 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 2px;
     display: inline;
 }
-.menu{
-    width: 100%;
-    padding-left: 3rem;
-    color: white;
-}
 
 .icon-color{
     color: #5e5e5e;
@@ -89,14 +84,11 @@ h1, h2, h3, h4, h5, h6 {
 #introduction {
     width: 100%;
     position: relative;
-    background: white;
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
-    padding: 80px 0 80px 0;
-}
-
-
-#introduction .container {
-    padding-top: 72px;
+    padding-top: 4%;
 }
 
 #introduction h1 {
@@ -107,6 +99,13 @@ h1, h2, h3, h4, h5, h6 {
     color: black;
 }
 
+.description{
+    padding-top: 10%;
+}
+
+.introduction-cars{
+    padding-top: 4%;
+}
 
 
 #introduction .btn-get-started {
@@ -163,8 +162,9 @@ h1, h2, h3, h4, h5, h6 {
         -webkit-animation: none;
         animation: none;
     }
-    #introduction .introduction-img {
+    #introduction .introduction-cars {
         text-align: center;
+
     }
     #introduction .introduction-img img {
         width: 50%;
@@ -183,6 +183,9 @@ h1, h2, h3, h4, h5, h6 {
     }
     #introduction .introduction-img img {
         width: 70%;
+    }
+    .navbar-nav{
+        background: black;
     }
 }
 
@@ -224,8 +227,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .home-image{
-    width: 130%;
+    margin-top: 15%;
+    width: 100%;
+    margin-left: 10%;
     text-align: center;
+    margin-bottom: 5%;
+
 }
 /*--------------------------------------------------------------
 # Sections General
@@ -283,41 +290,39 @@ section {
 /*--------------------------------------------------------------
 # Carousel
 --------------------------------------------------------------*/
-#project-pages {
-    background: #000046;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #fff;
+#pages-description{
+    padding-bottom: 0;
 }
-.project-pages-text{
-    font-size: 3rem;
-    line-height: 1.5;
+.carousel-img{
+    margin-top: 2.5%;
+    width: 350px;
+    height: auto;
+    margin-bottom: 3%;
+}
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-inner{
+    padding-bottom: 3.5%;
+    background: #304352;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
-.project-pages-img {
-    width: 10%;
-    border-radius: 100%;
-    margin: 20px;
-}
-
-#press {
-    background-color: #ef8172;
-    padding-bottom: 3%;
-}
-
-.press-logo {
-    width: 15%;
-    margin: 20px 20px 15px;
-}
-
+/* Declare heights because of positioning of img element */
 .carousel-item {
-    padding: 7% 15%;
+    height: 32rem;
 }
 
-#pricing {
-    padding: 7% 15%;
+.carousel-caption{
+    position: relative;
+    right: 0;
+    left: 0;
+    padding-bottom: 0;
 }
-/*--------------------------------------------------------------
+
+
+/*----------------------------------------------------------
 # Main Content
 --------------------------------------------------------------*/
 
@@ -443,289 +448,117 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Main Content
+# Left side
 --------------------------------------------------------------*/
 .left-container{
     margin-top: 9rem;
     width: 75%;
 }
 
-.html-pic{
-    width: 60%;
-    margin-left: 15%;
-}
-
 /*--------------------------------------------------------------
-# Author
+# Team section
 --------------------------------------------------------------*/
-#author-pic{
-    width: 20%;
-    border-radius: 45%;
-    vertical-align: middle;
-    float: left;
-}
-.member-info  {
-    padding-left: 10rem;
+#team {
+    padding-top: 60px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
 
-#author .social-icons a {
-    font-size: 18px;
-    display: inline-block;
-    background: #47b2e4;
-    color: #fff;
-    line-height: 1;
-    padding: 8px 0;
-    margin-right: 10px;
+.authors{
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+}
+
+#team .member {
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
-}
-/*--------------------------------------------------------------
-# Author2
---------------------------------------------------------------*/
-#author2-pic{
-    width: 20%;
-    border-radius: 45%;
-    vertical-align: middle;
-    float: left;
-}
-
-
-#author2 .social-icons a {
-    font-size: 18px;
-    display: inline-block;
-    background: #47b2e4;
-    color: #fff;
-    line-height: 1;
-    padding: 8px 0;
-    margin-right: 10px;
+    margin-bottom: 20px;
+    position: relative;
     border-radius: 50%;
-    text-align: center;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
+    overflow: hidden;
 }
 
-/*--------------------------------------------------------------
-# Tutorial
---------------------------------------------------------------*/
-#picture1{
-    padding-top: 6rem;
-}
-#picture3{
-    padding-top: 11rem;
+#team .member .member-info {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: 0.2s;
 }
 
-#picture4{
-    padding-top: 5rem;
+#team .member .member-info-content {
+    margin-top: 50px;
+    transition: margin 0.2s;
 }
 
-#picture5{
-    padding-top: 12rem;
+#team .member:hover .member-info {
+    background: rgba(0, 62, 128, 0.7);
+    opacity: 1;
+    transition: 0.4s;
 }
-#picture6{
-    width: 100%;
-    padding-top: 12rem;
+
+#team .member:hover .member-info-content {
+    margin-top: 0;
+    transition: margin 0.4s;
 }
-#picture7{
-    padding-top: 10rem;
+
+#team .member h4 {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 18px;
+    color: #fff;
 }
+
+#team .member span {
+    font-style: italic;
+    display: block;
+    font-size: 23px;
+    color: #fff;
+}
+
+#team .member .social {
+    margin-top: 15px;
+
+}
+
+#team .member .social a {
+    transition: none;
+    color: #fff;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+#team .member .social a:hover {
+    color: #007bff;
+}
+
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-#footer {
-    font-size: 14px;
-    background: black;
-}
 
-#footer .footer-newsletter {
-    padding: 10px 0;
-    background: #fff;
+.blog-footer {
+
+    padding: 2.5rem 0;
+    color: #999;
     text-align: center;
-    font-size: 15px;
-    color: #444444;
+    background-color: black;
+    border-top: .05rem solid #e5e5e5;
 }
 
-#footer .footer-newsletter h4 {
-    font-size: 24px;
-    margin: 0 0 20px 0;
-    padding: 0;
-    line-height: 1;
-    font-weight: 600;
-    color: #37517e;
+.social-icon{
+    font-size: 20px;
+    margin-right: 1%;
 }
 
-#footer .footer-newsletter form {
-    margin-top: 30px;
-    background: #fff;
-    padding: 6px 10px;
-    position: relative;
-    border-radius: 50px;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
-    text-align: left;
-}
-
-#footer .footer-newsletter form input[type="email"] {
-    border: 0;
-    padding: 4px 8px;
-    width: calc(100% - 100px);
-    border: 1px solid darkgray;
-}
-
-#footer .footer-newsletter form input[type="submit"] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    border: 0;
-    background: none;
-    font-size: 16px;
-    padding: 0 20px;
-    background: #00428a;
-    color: #fff;
-    transition: 0.3s;
-    border-radius: 50px;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-#footer .footer-newsletter form input[type="submit"]:hover {
-    background: #209dd8;
-}
-
-#footer .footer-top {
-    padding: 15px 0 0px 0;
-    background: #fff;
-}
-
-#footer .footer-top .footer-contact {
-    margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-info{
-    padding-right: 0rem;
-}
-
-#footer .footer-top .footer-contact h3 {
-    font-size: 28px;
-    margin: 0 0 10px 0;
-    padding: 2px 0 2px 0;
-    line-height: 1;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #37517e;
-}
-
-#footer .footer-top .footer-contact p {
-    font-size: 14px;
-    line-height: 24px;
+.blog-footer p:last-child {
     margin-bottom: 0;
-    font-family: "Jost", sans-serif;
-    color: #5e5e5e;
-}
-
-#footer .footer-top h4 {
-    font-size: 16px;
-    font-weight: bold;
-    color: #37517e;
-    position: relative;
-    padding-bottom: 12px;
-}
-
-#footer .footer-top .footer-links {
-    margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-#footer .footer-top .footer-links ul i {
-    padding-right: 2px;
-    color: #47b2e4;
-    font-size: 18px;
-    line-height: 1;
-}
-
-#footer .footer-top .footer-links ul li {
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-}
-
-#footer .footer-top .footer-links ul li:first-child {
-    padding-top: 0;
-}
-
-#footer .footer-top .footer-links ul a {
-    color: #777777;
-    transition: 0.3s;
-    display: inline-block;
-    line-height: 1;
-}
-
-#footer .footer-top .footer-links ul a:hover {
-    text-decoration: none;
-    color: #47b2e4;
-}
-
-#footer .footer-top .social-links a {
-    font-size: 18px;
-    display: inline-block;
-    background: #47b2e4;
-    color: #fff;
-    line-height: 1;
-    padding: 8px 0;
-    margin-right: 4px;
-    border-radius: 50%;
-    text-align: center;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
-}
-
-#footer .footer-top .social-links a:hover {
-    background: #209dd8;
-    color: #fff;
-    text-decoration: none;
-}
-
-#footer .footer-bottom {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color: #fff;
-}
-
-#footer .copyright {
-    float: left;
-}
-
-#footer .credits {
-    float: right;
-    font-size: 13px;
-}
-
-#footer .credits a {
-    transition: 0.3s;
-}
-
-@media (max-width: 768px) {
-    #footer .footer-bottom {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    #footer .copyright, #footer .credits {
-        text-align: center;
-        float: none;
-    }
-    #footer .credits {
-        padding-top: 4px;
-    }
-
-    .menu{
-        background: white;
-    }
 }
