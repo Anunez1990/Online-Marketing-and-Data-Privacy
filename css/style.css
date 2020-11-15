@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
     background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
-    padding-top: 4%;
+    padding-top: 11%;
 }
 
 #introduction h1 {
@@ -169,6 +169,10 @@ h1, h2, h3, h4, h5, h6 {
     #introduction .introduction-img img {
         width: 50%;
     }
+    .home-image{
+        margin-left: 0;
+        margin-top: 4%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -186,6 +190,10 @@ h1, h2, h3, h4, h5, h6 {
     }
     .navbar-nav{
         background: black;
+    }
+    .home-image{
+        margin-left: 0;
+        margin-top: 4%;
     }
 }
 
@@ -205,6 +213,10 @@ h1, h2, h3, h4, h5, h6 {
     #introduction .btn-watch-video i {
         font-size: 32px;
         top: 7px;
+    }
+    .home-image{
+        margin-left: 0;
+        margin-top: 4%;
     }
 }
 
@@ -226,14 +238,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.home-image{
-    margin-top: 15%;
-    width: 100%;
-    margin-left: 10%;
-    text-align: center;
-    margin-bottom: 5%;
 
-}
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
