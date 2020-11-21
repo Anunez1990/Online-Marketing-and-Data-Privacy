@@ -79,10 +79,10 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Summary Section
 --------------------------------------------------------------*/
-
 .fa-play-circle{
     font-size: x-large;
 }
+
 /*--------------------------------------------------------------
 # introduction Section
 --------------------------------------------------------------*/
@@ -105,7 +105,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .description{
-    padding-top: 0;
+    padding-top: 0px;
+    top:-50px;
+
 }
 
 #introduction .btn-get-started {
@@ -126,25 +128,6 @@ h1, h2, h3, h4, h5, h6 {
     background: #209dd8;
 }
 
-#introduction .btn-watch-video {
-    font-size: 16px;
-    display: inline-block;
-    padding: 10px 0 8px 40px;
-    transition: 0.5s;
-    margin: 10px 0 0 25px;
-    color: #fff;
-    position: relative;
-}
-
-#introduction .btn-watch-video i {
-    color: #fff;
-    font-size: 32px;
-    position: absolute;
-    left: 0;
-    top: 7px;
-    transition: 0.3s;
-}
-
 #introduction .btn-watch-video:hover i {
     color: #47b2e4;
 }
@@ -154,6 +137,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 991px) {
+    .description{
+        top: 5px;
+    }
+
     #introduction {
         height: 100vh;
         text-align: center;
@@ -176,6 +163,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
+
+    .description{
+        top: 5px;
+    }
+
     #introduction h1 {
         font-size: 28px;
         line-height: 36px;
@@ -198,9 +190,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 575px) {
+
+    .description{
+        top: 5px;
+    }
     #introduction .introduction-img img {
         width: 80%;
     }
+
     #introduction .btn-get-started {
         font-size: 16px;
         padding: 10px 24px 11px 24px;
@@ -435,8 +432,14 @@ section {
         padding-left: 0;
         padding-right: 0;
     }
-}
 
+}
+@media (min-width: 992px) {
+    .left-container {
+        margin-top: 9rem;
+        width: 75%;
+    }
+}
 @media (max-width: 992px) {
     .main-content .img {
         min-height: 400px;
@@ -447,21 +450,37 @@ section {
     .main-content .accordion-list {
         padding-bottom: 30px;
     }
+
+    .left-container {
+        margin-top: 4%;
+        width: 75%;
+    }
 }
 
 @media (max-width: 575px) {
     .main-content .img {
         min-height: 200px;
     }
+    .author1{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .author2{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .left-container {
+        margin-top: 4%;
+        width: 75%;
+
+    }
 }
 
 /*--------------------------------------------------------------
 # Left side
 --------------------------------------------------------------*/
-.left-container{
-    margin-top: 9rem;
-    width: 75%;
-}
 
 /*--------------------------------------------------------------
 # Team section
