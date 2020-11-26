@@ -319,6 +319,7 @@ section {
 }
 
 .carousel-indicators{
+    position: relative;
 
 }
 
@@ -619,6 +620,7 @@ section {
     text-align: center;
     background-color: black;
     border-top: .05rem solid #e5e5e5;
+
 }
 
 .social-icon{
@@ -628,4 +630,8 @@ section {
 
 .blog-footer p:last-child {
     margin-bottom: 0;
+}
+
+.section-title p{
+    font: 19px / 36px "Open Sans", sans-serif;
 }
