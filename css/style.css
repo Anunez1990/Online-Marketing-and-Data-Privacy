@@ -304,12 +304,13 @@ section {
 }
 /* Since positioning the image, we need to help out the caption */
 
-.carousel-inner{
-    padding-bottom: 3.5%;
+#myCarousel{
     background: #304352;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+}
+.carousel-inner{
+    padding-bottom: 3.5%;
 }
 
 /* Declare heights because of positioning of img element */
@@ -317,11 +318,16 @@ section {
     height: 32rem;
 }
 
+.carousel-indicators{
+
+}
+
 .carousel-caption{
     position: relative;
     right: 0;
     left: 0;
     padding-bottom: 0;
+    font: 19px / 36px "Open Sans", sans-serif;
 }
 
 
