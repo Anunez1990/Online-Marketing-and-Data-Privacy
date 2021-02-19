@@ -7,7 +7,4 @@ Created by:
 Links:
 
 * GITHUB: 
-https:https://an74njit.github.io/Online_Marketing_and_Data_Privacy/
-
-* AFS:
-https://web.njit.edu/~an74/project4/
+https://alexn2307.github.io/Online-Marketing-and-Data-Privacy/
